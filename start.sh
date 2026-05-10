@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
+
 set -e
+
+echo "Installing dependencies..."
+pnpm install --frozen-lockfile
+
+echo "Building frontend..."
+pnpm --filter traveloop-frontend build
+
+echo "Building backend..."
+pnpm --filter traveloop-backend build
 
 echo "Running database migrations..."
 pnpm --filter traveloop-backend db:push:force
