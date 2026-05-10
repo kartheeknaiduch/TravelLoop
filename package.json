@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "pnpm -r --parallel run dev",
-    "dev:frontend": "pdnpm --filter traveloop-frontend dev",
+    "dev:frontend": "pnpm --filter traveloop-frontend dev",
     "dev:backend": "pnpm --filter traveloop-backend dev",
     "build": "pnpm --filter traveloop-frontend build && pnpm --filter traveloop-backend build",
     "typecheck": "pnpm --filter traveloop-frontend typecheck && pnpm --filter traveloop-backend typecheck",
